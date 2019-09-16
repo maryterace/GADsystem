@@ -16,7 +16,7 @@ if ($result->num_rows > 0) {
         header('location: /');
     }
 } else {
-   header('location: /login.php');
+   header('location: /login.php?wrongpassword=yes');
 }
 $conn->close();
 
